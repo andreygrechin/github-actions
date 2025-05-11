@@ -1,5 +1,5 @@
 ---
-name: security scans
+name: a reusable workflow golang-security
 
 on:
   workflow_call:
@@ -13,11 +13,10 @@ on:
         type: string
         default: stable
 
-permissions:
-  contents: read
-
 jobs:
-  scan:
+  golang-security:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
