@@ -9,8 +9,6 @@ on:
 
 jobs:
   cleanup-caches:
-    permissions:
-      actions: write
     runs-on: ubuntu-latest
     steps:
       - name: Cleanup
