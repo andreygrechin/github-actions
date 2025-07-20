@@ -3,7 +3,7 @@ name: close inactive issues and MRs
 
 on:
   schedule:
-    - cron: "40 1 * * *"
+    - cron: 45 21 * * FRI
   workflow_call:
 
 jobs:
